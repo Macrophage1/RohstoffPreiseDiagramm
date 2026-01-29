@@ -199,7 +199,7 @@ if mode == "Band (Low–High)":
             name="GuV S1 (Worst–Best)",
             yaxis="y2",
             opacity=0.35,
-            marker=dict(color="rgba(40, 170, 90, 0.85)hh"),
+            marker=dict(color="rgba(40, 170, 90, 0.85)"),
             hovertemplate="Jahr=%{x}<br>S1 Worst=%{base:.0f}<br>S1 Best=%{y+base:.0f}<extra></extra>",
         ))
         # Scenario 2 range (Worst–Best)

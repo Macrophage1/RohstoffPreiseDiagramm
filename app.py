@@ -172,7 +172,8 @@ C_STROM_FILL = "rgba(255, 165, 0, 0.22)"    # orange
 C_STROM_LINE = "rgba(255, 165, 0, 0.90)"
 C_CO2_FILL   = "rgba(160, 160, 160, 0.18)"  # grey
 C_CO2_LINE   = "rgba(160, 160, 160, 0.85)"
-C_GUV_RED    = "rgba(220, 60, 60, 0.85)"    # red (for lines/bars)
+C_GUV_S1     = "rgba(220, 60, 60, 0.85)"   # rot
+C_GUV_S2     = "rgba(40, 170, 90, 0.85)"   # grün
 
 # ===================== Mode =====================
 mode = st.sidebar.radio("Darstellung", ["Band (Low–High)", "Whisker (5 Werte aus Low/Mid/High)"])
@@ -198,7 +199,7 @@ if mode == "Band (Low–High)":
             name="GuV S1 (Worst–Best)",
             yaxis="y2",
             opacity=0.35,
-            marker=dict(color="rgba(220,60,60,0.55)"),
+            marker=dict(color="rgba(40, 170, 90, 0.85)hh"),
             hovertemplate="Jahr=%{x}<br>S1 Worst=%{base:.0f}<br>S1 Best=%{y+base:.0f}<extra></extra>",
         ))
         # Scenario 2 range (Worst–Best)
